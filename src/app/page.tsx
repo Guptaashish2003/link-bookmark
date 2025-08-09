@@ -1,5 +1,4 @@
 "use client";
-import { useLenis } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Dashboard from "@/components/DashBoard/Dashboard";

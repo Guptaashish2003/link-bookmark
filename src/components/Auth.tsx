@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { set, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { signIn } from "next-auth/react";
 import axios from "axios";
 import { toast } from "sonner";

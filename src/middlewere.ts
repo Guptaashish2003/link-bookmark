@@ -1,7 +1,7 @@
 import authConfig from "@/backend/auth/auth.config"
 import NextAuth from "next-auth"
-import { NextRequest, NextResponse } from "next/server";
 const { auth } = NextAuth(authConfig);
+console.log("Auth config loaded:", auth);
 
 
 
