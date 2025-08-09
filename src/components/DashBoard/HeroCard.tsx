@@ -1,6 +1,7 @@
 "use client";
 
 import { ExternalLink, Calendar, LinkIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export interface BookmarkBlockProps {
@@ -24,7 +25,9 @@ export default function BookmarkBlock({
       {/* Header */}
       <div className="flex items-center gap-3 mb-4">
         {favicon && (
-          <img
+          <Image
+            width={24}
+            height={24}
             src={favicon}
             alt={title}
             className="w-6 h-6 rounded-sm border border-gray-200"

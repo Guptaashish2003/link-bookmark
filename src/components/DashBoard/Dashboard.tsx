@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, Send, Lock } from "lucide-react";
 import Auth from "../Auth"; // Your login card component
@@ -230,9 +230,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onToggleSidebar }) => {
             <Button
               type="submit"
               onClick={() => {
-                isAuthenticated
-                  ? console.log("Message sent")
-                  : setIsLoginOpen(true);
+                !isAuthenticated && setIsLoginOpen(true);
               }}
               className="absolute right-3 top-1/2 transform -translate-y-1/2 p-2 bg-gradient-to-r from-[#b264f0] to-[#ecd0f0] rounded-xl text-white hover:shadow-lg transition-shadow"
               aria-label="Send message"

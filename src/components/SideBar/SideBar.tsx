@@ -86,7 +86,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
 
             {/* Menu Items */}
             <div className="px-4 py-4 space-y-1">
-              {menuItems.map((item: MenuItem, index: number) => (
+              {menuItems.map((item: MenuItem) => (
                 <motion.button
                   key={item.label}
                   whileHover={{ x: 4 }}

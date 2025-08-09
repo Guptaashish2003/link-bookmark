@@ -80,8 +80,8 @@ export function Auth({ setIsLoginOpen }: AuthProps) {
        setIsLoginOpen(false); 
       }
     }
-  } catch (error: any) {
-    console.error("Error:", error.response?.data || error.message);
+  } catch (error) {
+    console.error("Error:", error);
   } finally {
     reset();
     if (isSignUp) setIsSignUp(false);
